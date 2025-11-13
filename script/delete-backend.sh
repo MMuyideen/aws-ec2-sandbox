@@ -10,6 +10,10 @@ aws ec2 delete-key-pair \
   --key-name main-ec2 \
   --region us-west-1
 
+# Remove local key pair file
+chmod 700 main-ec2.pem
+rm main-ec2.pem
+
 S3_BUCKET_NAME="deens3backend"
 
 
